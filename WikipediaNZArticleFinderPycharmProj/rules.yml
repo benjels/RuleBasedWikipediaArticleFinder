@@ -1,0 +1,16 @@
+---
+# ignore strings should be lowercase.
+# TODO - lower() in code
+ignore:
+    - list_of
+    - 'Template_talk:'
+# scopes should always end with 'a'
+# TODO - handle in clever way in code if missing
+seeds:
+    List_of_towns_in_New_Zealand:
+        scopes:
+            - 'div#mw-content-text td li a'
+    List_of_cities_in_New_Zealand:
+        scopes:
+            - 'div#mw-content-text table.sortable td a'
+...
