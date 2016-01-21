@@ -6,11 +6,12 @@ ignore:
     - 'Template_talk:'
 # scopes should always end with 'a'
 # TODO - handle in clever way in code if missing
-seeds:
-    List_of_towns_in_New_Zealand:
-        scopes:
-            - 'div#mw-content-text td li a'
+seeds: #seeds is a key in a map. NOTE THAT SOME OF THESE KEYS ARE ACTUALLY USEFUL/MEANINGFUL IN THE PROGRAM BY THEMSELVES. NOT JUST USED FOR RETREIVAL. KINDA WEIRD.
+    List_of_towns_in_New_Zealand: #this is also a key in a map. i.e. the "rules" map
+        scopes: #this is also a key in a map
+            - 'div#mw-content-text td li a' #this is not a key in a map. This is an entry in a list.
     List_of_cities_in_New_Zealand:
         scopes:
             - 'div#mw-content-text table.sortable td a'
 ...
+
